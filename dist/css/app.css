@@ -1282,12 +1282,25 @@ a {
 
 ul {
   margin-top: 0; }
+  ul li {
+    line-height: 1.3em;
+    margin-bottom: 6px; }
 
 .shadow {
   background-color: #f3f3f3; }
 
 .header .wrapper-inner {
   padding: 20px; }
+
+p.header {
+  font-size: 20px; }
+  p.header small {
+    font-size: 18px; }
+
+p.highlight {
+  color: #cc6600 !important; }
+  p.highlight small {
+    color: #cc6600 !important; }
 
 th.month {
   background-color: #c26e14; }

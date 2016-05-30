@@ -29,6 +29,10 @@ a {
 
 ul {
   margin-top: 0;
+  li {
+    line-height: 1.3em;
+    margin-bottom: 6px;
+  }
 }
 
 .shadow {
@@ -37,6 +41,22 @@ ul {
 
 .header .wrapper-inner {
   padding: 20px;
+}
+
+p {
+  &.header {
+    font-size: 20px;
+    small {
+      font-size: 18px;
+    }
+  }
+
+  &.highlight {
+    color: $highlight !important;
+    small {
+      color: $highlight !important;
+    }
+  }
 }
 
 th.month {
