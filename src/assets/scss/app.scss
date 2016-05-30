@@ -1,0 +1,93 @@
+@import 'settings';
+@import 'foundation';
+
+$section-header-bg: #c26e14;
+
+body, table.body, h1, h2, h3, h4, h5, h6, p, td, th, a {
+  font-family: 'Georgia', serif;
+  line-height: 1.5em;
+}
+
+table.no-vpad {
+  th.columns, td.columns  {
+    padding-bottom: 0;
+  }
+}
+
+.no-margin {
+  margin: 0;
+}
+
+a {
+  font-weight: bold;
+}
+
+.footer a {
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+ul {
+  margin-top: 0;
+}
+
+.shadow {
+  background-color: $body-background;
+}
+
+.header .wrapper-inner {
+  padding: 20px;
+}
+
+th.month {
+  th {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 20px;
+  }
+  background-color: #c26e14;
+}
+
+.logo {
+  .wrapper-inner {
+    padding: 10px;
+  }
+}
+
+.heading {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.sub-heading {
+  font-size: 18px;
+  line-height: 0;
+  color: $dark-gray;
+}
+
+.section-header {
+  background: $section-header-bg;
+
+  th.columns {
+    padding: 12px;
+    th {
+      font-size: 18px;
+      color: white;
+    }
+  }
+}
+
+.small {
+  font-size: 14px;
+}
+
+table.footer {
+  th.menu-item {
+    padding: 5px;
+  }
+}
+
+
+
