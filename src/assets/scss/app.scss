@@ -2,6 +2,7 @@
 @import 'foundation';
 
 $section-header-bg: #c26e14;
+$dark-yellow-olive: #9b831f;
 
 body, table.body, h1, h2, h3, h4, h5, h6, p, td, th, a {
   font-family: 'Georgia', serif;
@@ -109,5 +110,27 @@ table.footer {
   }
 }
 
+p {
+  &.h1-font-size { font-size: $h1-font-size; }
+  &.h2-font-size { font-size: $h2-font-size; }
+  &.h3-font-size { font-size: $h3-font-size; }
+  &.h4-font-size { font-size: $h4-font-size; }
+  &.h5-font-size { font-size: $h5-font-size; }
+}
+
+.dark-yellow-olive {
+  color: $dark-yellow-olive;
+}
+
+table.button.dark-yellow-olive table td {
+  background-color: $dark-yellow-olive;
+}
+
+.no-pad-right { padding-right: 0; }
+.no-pad-left { padding-left: 0; }
+
+.last-no-pad-right th.last {
+  padding: 0;
+}
 
 

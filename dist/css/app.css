@@ -1336,3 +1336,33 @@ th.month {
 
 table.footer th.menu-item {
   padding: 5px; }
+
+p.h1-font-size {
+  font-size: 34px; }
+
+p.h2-font-size {
+  font-size: 30px; }
+
+p.h3-font-size {
+  font-size: 28px; }
+
+p.h4-font-size {
+  font-size: 24px; }
+
+p.h5-font-size {
+  font-size: 20px; }
+
+.dark-yellow-olive {
+  color: #9b831f; }
+
+table.button.dark-yellow-olive table td {
+  background-color: #9b831f; }
+
+.no-pad-right {
+  padding-right: 0; }
+
+.no-pad-left {
+  padding-left: 0; }
+
+.last-no-pad-right th.last {
+  padding: 0; }
