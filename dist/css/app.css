@@ -1365,4 +1365,4 @@ table.button.dark-yellow-olive table td {
   padding-left: 0; }
 
 .last-no-pad-right th.last {
-  padding: 0; }
+  padding: 0 !important; }
