@@ -991,20 +991,20 @@ table.button:active table a {
   border: 0px solid #147dc2; }
 
 table.button.secondary table td {
-  background: #777777;
+  background: #f7dac0;
   color: #fefefe;
-  border: 2px solid #777777; }
+  border: 2px solid #f7dac0; }
 
 table.button.secondary table a {
   color: #fefefe;
-  border: 0px solid #777777; }
+  border: 0px solid #f7dac0; }
 
 table.button.secondary:hover table td {
-  background: #919191;
+  background: #fdf5ed;
   color: #fefefe; }
 
 table.button.secondary:hover table a {
-  border: 0px solid #919191; }
+  border: 0px solid #fdf5ed; }
 
 table.button.secondary:hover table td a {
   color: #fefefe; }
@@ -1052,11 +1052,11 @@ th.callout-inner {
   background: #fefefe; }
   th.callout-inner.primary {
     background: #def0fc;
-    border: 1px solid #444444;
+    border: 1px solid #eca565;
     color: #0a0a0a; }
   th.callout-inner.secondary {
-    background: #ebebeb;
-    border: 1px solid #444444;
+    background: #fef9f6;
+    border: 1px solid #eca565;
     color: #0a0a0a; }
   th.callout-inner.success {
     background: #e1faea;
