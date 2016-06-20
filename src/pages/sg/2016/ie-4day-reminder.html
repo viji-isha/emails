@@ -6,7 +6,21 @@ preview: https://rawgit.com/ishacrm/emails/master/dist/sg/2016/ie-4day-reminder.
 <container>
 
     {{> spacer }}
-
+    {{> spacer-white }}
+    <row>
+        <columns>
+            <p class="highlight">Dear {{{{raw}}}}{{FIRST_NAME}}{{{{/raw}}}},</p>
+            <p>
+                We would like to remind you that early bird offer for 4 day IE program (below) ends in 24 hrs.
+                Please inform your friends and family members who will be interested to avail this opportunity.
+            </p>
+            <p>
+                Pranam,<br>
+                Isha Volunteers
+            </p>
+        </columns>
+    </row>
+    {{> spacer }}
     <row class="collapse no-vpad">
         <columns large="2" small="4">
             <wrapper class="logo">
@@ -16,7 +30,7 @@ preview: https://rawgit.com/ishacrm/emails/master/dist/sg/2016/ie-4day-reminder.
         <columns large="8" small="8">
             <wrapper class="header">
                 <p class="heading text-right">Inner Engineering Program</p>
-                <p class="sub-heading text-right">Early Bird offer ends in 24 hrs</p>
+                <p class="sub-heading text-right">New 4 Day Program</p>
             </wrapper>
         </columns>
         <columns large="2" class="month">
