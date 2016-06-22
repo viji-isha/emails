@@ -126,12 +126,16 @@ p {
   color: $dark-yellow-olive;
 }
 
+.dark-gray .wrapper-inner {
+  color: $dark-gray;
+}
+
 table.button.dark-yellow-olive table td {
   background-color: $dark-yellow-olive;
 }
 
-.no-pad-right { padding-right: 0; }
-.no-pad-left { padding-left: 0; }
+.no-pad-right { padding-right: 0 !important; }
+.no-pad-left { padding-left: 0 !important; }
 
 .last-no-pad-right th.last {
   padding: 0 !important;

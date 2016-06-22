@@ -1358,14 +1358,17 @@ p.h5-font-size {
 .dark-yellow-olive {
   color: #9b831f; }
 
+.dark-gray .wrapper-inner {
+  color: #8a8a8a; }
+
 table.button.dark-yellow-olive table td {
   background-color: #9b831f; }
 
 .no-pad-right {
-  padding-right: 0; }
+  padding-right: 0 !important; }
 
 .no-pad-left {
-  padding-left: 0; }
+  padding-left: 0 !important; }
 
 .last-no-pad-right th.last {
   padding: 0 !important; }
