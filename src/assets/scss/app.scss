@@ -60,6 +60,15 @@ p {
   }
 }
 
+span.highlight {
+  color: $highlight !important;
+}
+
+span.condensed {
+  line-height: 1.4em;
+}
+
+
 th.month {
   th {
     color: white;
