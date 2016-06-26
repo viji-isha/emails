@@ -1289,6 +1289,9 @@ ul {
 .shadow {
   background-color: #f3f3f3; }
 
+.header.text-right .wrapper-inner {
+  text-align: right !important; }
+
 .header .wrapper-inner {
   padding: 20px; }
 
@@ -1326,7 +1329,7 @@ th.month {
 
 .sub-heading {
   font-size: 18px;
-  line-height: 0;
+  line-height: 1em;
   color: #8a8a8a; }
 
 .section-header {
