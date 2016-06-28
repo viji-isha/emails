@@ -155,4 +155,16 @@ table.button.dark-yellow-olive table td {
   padding: 0 !important;
 }
 
+table.button.outline.orange {
+  border: 1px solid $highlight;
+  table td {
+    background-color: white;
+    border: 0;
+
+    a, a:hover, a:visited, a:focus {
+      color: $highlight;
+    }
+  }
+}
+
 

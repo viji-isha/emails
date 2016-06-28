@@ -1381,3 +1381,11 @@ table.button.dark-yellow-olive table td {
 
 .last-no-pad-right th.last {
   padding: 0 !important; }
+
+table.button.outline.orange {
+  border: 1px solid #cc6600; }
+  table.button.outline.orange table td {
+    background-color: white;
+    border: 0; }
+    table.button.outline.orange table td a, table.button.outline.orange table td a:hover, table.button.outline.orange table td a:visited, table.button.outline.orange table td a:focus {
+      color: #cc6600; }
