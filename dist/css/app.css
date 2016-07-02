@@ -1389,3 +1389,12 @@ table.button.outline.orange {
     border: 0; }
     table.button.outline.orange table td a, table.button.outline.orange table td a:hover, table.button.outline.orange table td a:visited, table.button.outline.orange table td a:focus {
       color: #cc6600; }
+
+table.button.orange table td {
+  background-color: #cc6600;
+  border: 0; }
+  table.button.orange table td a, table.button.orange table td a:hover, table.button.orange table td a:visited, table.button.orange table td a:focus {
+    color: white; }
+
+.no-bold {
+  font-weight: normal !important; }

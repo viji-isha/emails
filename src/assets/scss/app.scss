@@ -167,4 +167,18 @@ table.button.outline.orange {
   }
 }
 
+table.button.orange {
+  table td {
+    background-color: $highlight;
+    border: 0;
+
+    a, a:hover, a:visited, a:focus {
+      color: white;
+    }
+  }
+}
+
+.no-bold {
+  font-weight: normal !important;
+}
 
