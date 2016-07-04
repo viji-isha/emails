@@ -1389,3 +1389,16 @@ table.button.outline.orange {
     border: 0; }
     table.button.outline.orange table td a, table.button.outline.orange table td a:hover, table.button.outline.orange table td a:visited, table.button.outline.orange table td a:focus {
       color: #cc6600; }
+
+hr.orange {
+  border: 0;
+  border-top: 1px solid #cc6600; }
+
+hr.condensed {
+  margin: 5px 0; }
+
+.lh-normal p {
+  line-height: normal; }
+
+.container.sans-serif p {
+  font-family: "Helvetica Neue Light", "Lucida Grande", "Calibri", "Arial", sans-serif; }

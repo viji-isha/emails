@@ -167,4 +167,25 @@ table.button.outline.orange {
   }
 }
 
+hr.orange {
+  border: 0;
+  border-top: 1px solid $highlight;
+}
+
+hr.condensed {
+  margin: 5px 0;
+}
+
+.lh-normal {
+  p {
+    line-height: normal;
+  }
+}
+
+.container.sans-serif {
+  p {
+    font-family: "Helvetica Neue Light", "Lucida Grande", "Calibri", "Arial", sans-serif;
+  }
+}
+
 

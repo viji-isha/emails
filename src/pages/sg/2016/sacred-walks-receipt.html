@@ -1,0 +1,53 @@
+---
+preview: https://rawgit.com/ishacrm/emails/master/dist/sg/2016/sacred-walks-receipt.html
+---
+<container class="sans-serif lh-normal">
+
+    {{> spacer }}
+    {{> spacer-white }}
+    <row>
+        <columns large="3">
+            <img src="https://storage.googleapis.com/isha-logos/sacred-walks-logo.png?1" alt="" />
+        </columns>
+        <columns>
+            <wrapper>
+                <p class="text-right">
+                Date: {{{{raw}}}}{{DATE}}{{{{/raw}}}}<br>
+                Receipt ID: {{{{raw}}}}{{TRANSACTION_ID}}{{{{/raw}}}}
+                </p>
+            </wrapper>
+        </columns>
+    </row>
+    {{> spacer-white }}
+    <row>
+        <columns>
+            <p>
+                Received with thanks from <strong><em>{{{{raw}}}}{{FIRST_NAME}}{{{{/raw}}}} {{{{raw}}}}{{LAST_NAME}}{{{{/raw}}}}</strong></em>,
+                <br><br>
+                the sum of <strong><em>{{{{raw}}}}{{AMOUNT_IN_WORDS}}{{{{/raw}}}} only</strong></em>,<br><br>
+                towards <strong><em>{{{{raw}}}}{{PURPOSE}}{{{{/raw}}}}</strong></em>
+            </p>
+        </columns>
+    </row>
+    <row>
+        <columns large="3">
+            <callout class="secondary">
+            <p class="text-center "><strong>{{{{raw}}}}{{AMOUNT}}{{{{/raw}}}}</strong></p>
+            </callout>
+        </columns>
+        <columns large="9">
+        </columns>
+    </row>
+    <row>
+        <columns large="12">
+            <hr class="orange condensed">
+            <p class="text-center">
+                <strong>
+                    SacredWalks Pte Ltd. Singapore<br>
+                    Reg No: 201504258G
+                </strong>
+            </p>
+        </columns>
+    </row>
+    {{> spacer }}
+</container>
