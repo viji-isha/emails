@@ -167,6 +167,21 @@ table.button.outline.orange {
   }
 }
 
+table.button.orange {
+  table td {
+    background-color: $highlight;
+    border: 0;
+
+    a, a:hover, a:visited, a:focus {
+      color: white;
+    }
+  }
+}
+
+.no-bold {
+  font-weight: normal !important;
+}
+
 hr.orange {
   border: 0;
   border-top: 1px solid $highlight;
@@ -187,5 +202,3 @@ hr.condensed {
     font-family: "Helvetica Neue Light", "Lucida Grande", "Calibri", "Arial", sans-serif;
   }
 }
-
-
