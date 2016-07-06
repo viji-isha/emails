@@ -114,7 +114,7 @@ th.month {
   }
 }
 
-.small {
+.small, .small th, .small td, .small p {
   font-size: 14px;
 }
 
@@ -176,6 +176,10 @@ table.button.orange {
       color: white;
     }
   }
+}
+
+.bold {
+  font-weight: bold !important;
 }
 
 .no-bold {

@@ -1,0 +1,96 @@
+---
+img: https://storage.googleapis.com/mail-attachments
+subject: "REGISTRATION_CONFIRMATION"
+preview: https://rawgit.com/ishacrm/emails/master/dist/sg/2016/hatha-yoga-confirmation.html
+---
+<container>
+
+    {{> spacer }}
+
+    <row class="collapse no-vpad">
+        <columns large="2" small="4">
+            <wrapper class="logo">
+                <img src="{{img}}/common/isha-logo.png" alt="" />
+            </wrapper>
+        </columns>
+        <columns large="10" small="10">
+            <wrapper class="header text-right">
+                <span class="heading">{{{{raw}}}}{{PROGRAM_NAME}}{{{{/raw}}}}</span><br>
+                <span class="sub-heading">Program Registration</span>
+            </wrapper>
+        </columns>
+    </row>
+    {{> drop-shadow }}
+    {{> spacer-white }}
+    <row>
+        <columns>
+            <p class="highlight">Dear {{{{raw}}}}{{FIRST_NAME}}{{{{/raw}}}},</p>
+            <p>
+                Thank you for registering for the {{{{raw}}}}{{PROGRAM_NAME}}{{{{/raw}}}} Program.<br>
+                You may use this email as a confirmation for your registration and as a payment receipt.<br>
+                Kindly take note of the program details and do contact us for any clarifications.
+            </p>
+            <hr>
+        </columns>
+    </row>
+    <row>
+        <columns large="1"></columns>
+        <columns large="10">
+
+            <p class="highlight bold">Participant Details</p>
+            <p class="small">
+                {{{{raw}}}}{{FIRST_NAME}}{{{{/raw}}}} {{{{raw}}}}{{LAST_NAME}}{{{{/raw}}}}<br>
+
+                <strong>Email Address:</strong> {{{{raw}}}}{{EMAIL}}{{{{/raw}}}}<br>
+                <strong>Contact Number(s):</strong>
+                    {{{{raw}}}}{{MOBILE_PHONE}}{{{{/raw}}}}
+                    {{{{raw}}}}{{HOME_PHONE}}{{{{/raw}}}}
+                    {{{{raw}}}}{{OFFICE_PHONE}}{{{{/raw}}}}
+            </p>
+            <hr>
+            <p class="highlight bold">Program Details</p>
+            <p class="small">
+                <strong>{{{{raw}}}}{{PROGRAM_NAME}}{{{{/raw}}}}</strong><br>
+
+                <strong>Date(s):</strong> {{{{raw}}}}{{DATES}}{{{{/raw}}}}<br>
+                <strong>Venue:</strong> {{{{raw}}}}{{VENUE}}{{{{/raw}}}} {{{{raw}}}}{{if MAP_LINK}}{{{{/raw}}}} [MAP] {{{{raw}}}}{{end}}{{{{/raw}}}}<br>
+                <strong>Address:</strong> {{{{raw}}}}{{ADDRESS}}{{{{/raw}}}}<br>
+                <strong>Schedule:</strong><br>
+                {{{{raw}}}}{{each sessions}}{{{{/raw}}}}
+                {{{{raw}}}}{{loop_var.DAY}}{{{{/raw}}}}: {{{{raw}}}}{{loop_var.START_TIME}}{{{{/raw}}}} to {{{{raw}}}}{{loop_var.END_TIME}}{{{{/raw}}}}<br>
+                {{{{raw}}}}{{end}}{{{{/raw}}}}
+            </p>
+            <hr>
+            <p class="highlight bold">Payment Details</p>
+            <p class="small">
+                <strong>Transaction ID:</strong> {{{{raw}}}}{{TRANSACTION_ID}}{{{{/raw}}}}<br>
+                <strong>Invoice Number:</strong> {{{{raw}}}}{{INVOICE_NUMBER}}{{{{/raw}}}}<br>
+                <strong>Payment Amount:</strong> {{{{raw}}}}{{AMOUNT}}{{{{/raw}}}}
+            </p>
+        </columns>
+        <columns large="1">
+        </columns>
+    </row>
+    <hr>
+    <row>
+        <columns class="small">
+            Please Note:
+            <ul>
+                <li>It is mandatory to attend all the sessions</li>
+                <li>You need to be <a href="https://register.ishayoga.sg/empty-stomach-condition">on empty stomach</a>, when you come for the program
+                </li>
+                <li>Kindly arrive atleast 15 mins before the program start time, so that you are settled before the program starts </li>
+                <li>Hall doors will close sharply at the program start time and latecomers will not be allowed inside</li>
+            </ul>
+            <hr>
+            <p>
+                We request you to <em>not</em> print this email when you come for the program.<br>
+                You can show a copy of this email on your smartphone, or your NRIC for verification during checkin.
+            </p>
+        </columns>
+    </row>
+    {{> drop-shadow }}
+    {{> footer-sg }}
+    {{> spacer }}
+
+</container>

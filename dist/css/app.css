@@ -1340,7 +1340,7 @@ th.month {
       font-size: 18px;
       color: white; }
 
-.small {
+.small, .small th, .small td, .small p {
   font-size: 14px; }
 
 .small-15 {
@@ -1395,6 +1395,9 @@ table.button.orange table td {
   border: 0; }
   table.button.orange table td a, table.button.orange table td a:hover, table.button.orange table td a:visited, table.button.orange table td a:focus {
     color: white; }
+
+.bold {
+  font-weight: bold !important; }
 
 .no-bold {
   font-weight: normal !important; }
