@@ -206,3 +206,19 @@ hr.condensed {
     font-family: "Helvetica Neue Light", "Lucida Grande", "Calibri", "Arial", sans-serif !important;
   }
 }
+
+.bg-black {
+  th, td, p {
+    background-color: black;
+    color: white;
+
+    a, a:visited, a:hover, a:focus {
+      color: $orange;
+    }
+  }
+
+  p.orange {
+    color: $orange;
+  }
+
+}
