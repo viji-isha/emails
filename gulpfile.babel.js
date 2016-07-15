@@ -16,7 +16,7 @@ import colors   from 'colors';
 const $ = plugins();
 const center = 'sg';
 const year = '2016';
-const wip = 'guru-purnima';
+const wip = 'ie-completion-welcome';
 
 const src = 'src/pages/' + center + '/' + year + '/' + wip + '.html';
 const base = 'src/pages/';
