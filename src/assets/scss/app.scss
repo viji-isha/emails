@@ -224,3 +224,20 @@ table.bg-black {
   }
 
 }
+
+.quote{
+  font-family: 'Georgia',serif;
+  font-weight: normal;
+  line-height: 1.5em;
+  font-size: 1.05em;
+  font-style: italic;
+  color: #7c7c7c;
+
+  .wrapper-inner{
+    padding: 10px;
+  }
+
+  span{
+    display: block;
+  }
+}

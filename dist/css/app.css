@@ -1320,7 +1320,6 @@ th.month {
     line-height: 24px;
     padding: 20px; }
 
-.quote .wrapper-inner,
 .logo .wrapper-inner {
   padding: 10px; }
 
@@ -1426,15 +1425,14 @@ table.bg-black {
   table.bg-black p.orange {
     color: #fe821f; }
 
-.quote{
+.quote {
   font-family: 'Georgia',serif;
   font-weight: normal;
   line-height: 1.5em;
   font-size: 1.05em;
   font-style: italic;
-  color: #7c7c7c;
-}
-
-.quote span{
-  display: block;
-}
+  color: #7c7c7c; }
+  .quote .wrapper-inner {
+    padding: 10px; }
+  .quote span {
+    display: block; }
