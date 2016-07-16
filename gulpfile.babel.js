@@ -1,32 +1,26 @@
 import gulp     from 'gulp';
 import plugins  from 'gulp-load-plugins';
+import debug    from 'gulp-debug';
 import browser  from 'browser-sync';
-import rimraf   from 'rimraf';
 import panini   from 'panini';
 import yargs    from 'yargs';
 import lazypipe from 'lazypipe';
 import inky     from 'inky';
 import fs       from 'fs';
 import siphon   from 'siphon-media-query';
-import path     from 'path';
-import merge    from 'merge-stream';
-import beep     from 'beepbeep';
-import colors   from 'colors';
 
 const $ = plugins();
 const center = 'sg';
 const year = '2016';
-const wip = 'ie-completion-welcome';
+const wip = 'guru-purnima';
 
-const src = 'src/pages/' + center + '/' + year + '/' + wip + '.html';
+const wip_path = center + '/' + year + '/' + wip + '.html';
 const base = 'src/pages/';
-const dist = 'dist/' + center + '/' + year + '/' + wip + '.html';
+const src = base + wip_path;
+const dist = 'dist/' + wip_path;
 
 // Look for the --production flag
 const PRODUCTION = !!(yargs.argv.production);
-
-// Declar var so that both AWS and Litmus task can use it.
-var CONFIG;
 
 // Build the "dist" folder by running all of the above tasks
 gulp.task('build',
@@ -76,7 +70,8 @@ function images() {
 
 // Inline CSS and minify HTML
 function inline() {
-  return gulp.src(dist, { base: base }) //'dist/**/*.html'
+  return gulp.src('dist/**/' + wip_path) //[dist], { base: base } // 'dist/**/*.html'
+    .pipe(debug())
     .pipe($.if(PRODUCTION, inliner('dist/css/app.css')))
     .pipe(gulp.dest('dist'));
 }
@@ -102,8 +97,7 @@ function watch() {
 
 // Inlines CSS into HTML, adds media query CSS into the <style> tag of the email, and compresses the HTML
 function inliner(css) {
-  var css = fs.readFileSync(css).toString();
-  var mqCss = siphon(css);
+  var mqCss = siphon(fs.readFileSync(css).toString());
 
   var pipe = lazypipe()
     .pipe($.inlineCss, {
