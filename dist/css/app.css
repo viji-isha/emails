@@ -1415,11 +1415,12 @@ hr.condensed {
 .container.sans-serif p {
   font-family: "Helvetica Neue Light", "Lucida Grande", "Calibri", "Arial", sans-serif !important; }
 
-.bg-black th, .bg-black td, .bg-black p {
-  background-color: black;
-  color: white; }
-  .bg-black th a, .bg-black th a:visited, .bg-black th a:hover, .bg-black th a:focus, .bg-black td a, .bg-black td a:visited, .bg-black td a:hover, .bg-black td a:focus, .bg-black p a, .bg-black p a:visited, .bg-black p a:hover, .bg-black p a:focus {
+table.bg-black {
+  background-color: black; }
+  table.bg-black th, table.bg-black td, table.bg-black p {
+    background-color: black;
+    color: white; }
+    table.bg-black th a, table.bg-black th a:visited, table.bg-black th a:hover, table.bg-black th a:focus, table.bg-black td a, table.bg-black td a:visited, table.bg-black td a:hover, table.bg-black td a:focus, table.bg-black p a, table.bg-black p a:visited, table.bg-black p a:hover, table.bg-black p a:focus {
+      color: #fe821f; }
+  table.bg-black p.orange {
     color: #fe821f; }
-
-.bg-black p.orange {
-  color: #fe821f; }

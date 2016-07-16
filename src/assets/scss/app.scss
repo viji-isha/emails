@@ -207,7 +207,9 @@ hr.condensed {
   }
 }
 
-.bg-black {
+table.bg-black {
+  background-color: black;
+
   th, td, p {
     background-color: black;
     color: white;
