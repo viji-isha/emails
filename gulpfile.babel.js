@@ -12,7 +12,7 @@ import siphon   from 'siphon-media-query';
 const $ = plugins();
 const center = 'sg';
 const year = '2016';
-const wip = 'guru-purnima';
+const wip = 'ie-completion-welcome';
 
 const wip_path = center + '/' + year + '/' + wip + '.html';
 const base = 'src/pages/';
@@ -105,7 +105,7 @@ function inliner(css) {
       removeStyleTags: false,
       removeLinkTags: false
     })
-    .pipe($.replace, '<!-- <style> -->', `<style>${mqCss}</style>`)
+    .pipe($.replace, '<!-- <style> -->', '<style>${mqCss}</style>')
     .pipe($.htmlmin, {
       collapseWhitespace: true,
       minifyCSS: true
