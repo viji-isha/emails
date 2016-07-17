@@ -1424,15 +1424,3 @@ table.bg-black {
       color: #fe821f; }
   table.bg-black p.orange {
     color: #fe821f; }
-
-.quote {
-  font-family: 'Georgia',serif;
-  font-weight: normal;
-  line-height: 1.5em;
-  font-size: 1.05em;
-  font-style: italic;
-  color: #7c7c7c; }
-  .quote .wrapper-inner {
-    padding: 10px; }
-  .quote span {
-    display: block; }
