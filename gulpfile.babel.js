@@ -105,7 +105,7 @@ function inliner(css) {
       removeStyleTags: false,
       removeLinkTags: false
     })
-    .pipe($.replace, '<!-- <style> -->', '<style>${mqCss}</style>')
+    .pipe($.replace, '<!-- <style> -->', `<style>${mqCss}</style>`)
     .pipe($.htmlmin, {
       collapseWhitespace: true,
       minifyCSS: true
