@@ -1,0 +1,67 @@
+---
+img: https://storage.googleapis.com/mail-attachments
+subject: "Welcome to Isha Singapore!"
+preview: https://rawgit.com/ishacrm/emails/master/dist/sg/2016/ie-completion-welcome.html
+---
+
+<container>
+
+    {{> spacer }}
+    <row class="collapse no-vpad">
+        <columns large="2" small="2">
+            <wrapper class="logo">
+                <img src="{{img}}/common/isha-logo.png" alt="" />
+            </wrapper>
+        </columns>
+        <columns large="8" small="10">
+            <wrapper class="header text-right">
+                <span class="heading">Isha Fun Day</span><br>
+                <span class="sub-heading">Come and celebrate - Isha style!</span><br>
+            </wrapper>
+        </columns>
+        <columns large="2" class="month">
+            July 2016
+        </columns>
+    </row>
+
+    {{> drop-shadow }}
+
+    <row class="collapse no-vpad">
+        <columns>
+            <img src="http://storage.googleapis.com/mail-attachments/funday-2015/funday-banner.png" alt="" />
+        </columns>
+    </row>
+
+    {{> spacer-white}}
+
+    <row>
+        <columns>
+            <p class="highlight">Namaskaram {{{{raw}}}}{{FIRST_NAME}}{{{{/raw}}}},</p>
+
+            <p>After the recent Shambhavi Mahamudra and Bhava Spandhana Programs in April, Isha's Fun Day is here!</p>
+
+            <p>
+                Bring your friends and family along as we get together and celebrate LIFE!
+                We will start with games followed by wholesome vegetarian food around 4 pm for everyone to enjoy.
+                Isha Teachers from Isha Yoga Centre are also joining us for this day.
+                If you have any questions or need any guidance, there will be some time during which you can interact with them.
+            </p>
+
+            <p>Come and celebrate with us Isha style!</p>
+
+            <callout class="secondary">
+                <strong>Date & Time:</strong> Sunday, 31 June '16 - 4:00pm to 7:00pm<br>
+                <strong>Venue:</strong> Punggol Park (near Wild Oats Restaurant)<br>
+            </callout>
+        </columns>
+    </row>
+    {{> drop-shadow }}
+
+    {{> spacer }}
+
+    {{> footer-sg-unsub }}
+
+    {{> spacer }}
+
+
+</container>
