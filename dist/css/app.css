@@ -1424,3 +1424,7 @@ table.bg-black {
       color: #fe821f; }
   table.bg-black p.orange {
     color: #fe821f; }
+
+.header .sub-heading {
+  font-size: 14px;
+  margin-bottom: 0px; }
