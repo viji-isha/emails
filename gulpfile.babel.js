@@ -12,7 +12,7 @@ import siphon   from 'siphon-media-query';
 const $ = plugins();
 const center = 'sg';
 const year = '2016';
-const wip = 'bsp-questionnaire-gents';
+const wip = 'bsp-questionnaire-ladies';
 const wip_path = center + '/' + year + '/' + wip + '.html';
 const base = 'src/pages/';
 const src = base + wip_path;
