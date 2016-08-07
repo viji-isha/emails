@@ -72,10 +72,10 @@ table, tr, td {
 @media only screen {
   html {
     min-height: 100%;
-    background: #f3f3f3; } }
+    background: #e1dcd0; } }
 
 table.body {
-  background: #f3f3f3;
+  background: #e1dcd0;
   height: 100%;
   width: 100%; }
 
@@ -1287,7 +1287,8 @@ ul {
     margin-bottom: 6px; }
 
 .shadow {
-  background-color: #f3f3f3; }
+  background-color: #e1dcd0;
+  width: 580px; }
 
 .header.text-right .wrapper-inner {
   text-align: right !important; }
@@ -1333,12 +1334,11 @@ th.month {
   color: #8a8a8a; }
 
 .section-header {
-  background: #c26e14; }
-  .section-header th.columns {
-    padding: 12px; }
-    .section-header th.columns th {
-      font-size: 18px;
-      color: white; }
+  margin-bottom: 15px; }
+  .section-header th.columns th {
+    padding-top: 5px;
+    font-family: Merriweather, Georgia;
+    font-size: 20px; }
 
 .small, .small th, .small td, .small p {
   font-size: 14px; }
@@ -1428,3 +1428,94 @@ table.bg-black {
 .header .sub-heading {
   font-size: 14px;
   margin-bottom: 0px; }
+
+.top-row {
+  background: #e1dcd0; }
+  .top-row .hidden-text {
+    font-size: 8px;
+    color: transparent; }
+  .top-row #view-on-web-link {
+    text-align: right;
+    padding: 10px 0; }
+    .top-row #view-on-web-link a {
+      font-size: 10px;
+      font-weight: 100;
+      color: #909090;
+      font-family: Arial, Helvetica, sans-serif; }
+
+.email-header {
+  background: url("http://www.ishafoundation.org/mailmarketer/admin/temp/user/3/bg-image.png") no-repeat center;
+  height: 130px;
+  padding-top: 100px; }
+  .email-header .wrapper-inner {
+    padding: 30px 0 0 10px; }
+  .email-header .header {
+    margin-top: 20px; }
+    .email-header .header .heading {
+      font-family: Merriweather, Georgia;
+      font-size: 24px;
+      color: white;
+      font-weight: bolder; }
+    .email-header .header .sub-heading {
+      font-family: Merriweather, Georgia;
+      font-size: 18px;
+      color: #27414d;
+      line-height: 33px; }
+
+.the-shadow {
+  border-top: 4px solid #cccac0;
+  height: 20px;
+  padding: 0;
+  background: #e1dcd0;
+  border-collapse: initial; }
+
+.section-title, .section-title-large {
+  margin-bottom: 7px; }
+  .section-title th.columns th, .section-title-large th.columns th {
+    padding-top: 7px;
+    padding-bottom: 0;
+    font-family: Merriweather, Georgia;
+    font-size: 20px; }
+
+.section-title-large {
+  font-size: 24px; }
+  .section-title-large th.columns th {
+    padding-top: 10px; }
+
+.section-text {
+  font-size: 16px; }
+
+.read-more-link {
+  font-family: Merriweather, Georgia;
+  font-size: 16px; }
+
+.program-details p {
+  padding-top: 14px;
+  font-size: 16px; }
+
+.class-notes p {
+  padding-top: 7px;
+  font-style: italic;
+  font-size: 14.4px; }
+
+.quote .wrapper-inner {
+  padding-top: 25px; }
+
+.quote p {
+  font-family: Merriweather, Georgia;
+  font-style: italic;
+  font-size: 20px; }
+
+.orange-background, .section-header {
+  background: #cc6600;
+  color: white; }
+  .orange-background table.body, .section-header table.body, .orange-background h1, .section-header h1, .orange-background h2, .section-header h2, .orange-background h3, .section-header h3, .orange-background h4, .section-header h4, .orange-background h5, .section-header h5, .orange-background h6, .section-header h6, .orange-background p, .section-header p, .orange-background td, .section-header td, .orange-background th, .section-header th, .orange-background a, .section-header a {
+    color: white; }
+
+.grey-background, .program-details {
+  background: #eee; }
+
+.orange-text, .read-more-link {
+  color: #cc6600; }
+  .orange-text table.body, .read-more-link table.body, .orange-text h1, .read-more-link h1, .orange-text h2, .read-more-link h2, .orange-text h3, .read-more-link h3, .orange-text h4, .read-more-link h4, .orange-text h5, .read-more-link h5, .orange-text h6, .read-more-link h6, .orange-text p, .read-more-link p, .orange-text td, .read-more-link td, .orange-text th, .read-more-link th, .orange-text a, .read-more-link a {
+    color: #cc6600; }
