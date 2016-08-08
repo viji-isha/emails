@@ -1,0 +1,54 @@
+---
+img: https://storage.googleapis.com/mail-attachments
+subject: "RESERVED_RECEIPT"
+preview: https://rawgit.com/ishacrm/emails/master/dist/au/2016/RESERVED_RECEIPT.html
+---
+<container>
+
+    {{> spacer }}
+    <row style="border: 1px solid orange">
+        <columns>
+            <row>
+                <columns large="3" small="3" x-small="12" xx-small="12">
+                    <wrapper class="logo">
+                        <img src="{{img}}/au/common/isha-au-logo.jpg" alt="" />
+                    </wrapper>
+                </columns>
+                <columns large="9" small="9" x-small="12" sx-small="12">
+                    <wrapper class="header text-right">
+                        <spacer size="8"></spacer>
+                        <span>Date: {{{{raw}}}}{{DATE}}{{{{/raw}}}}</span>
+                        <spacer size="8"></spacer>
+                        <span>Receipt ID: {{{{raw}}}}{{TRANSACTION_ID}}{{{{/raw}}}}</span>
+                    </wrapper>
+                </columns>
+            </row>
+            <row class="no-vpad">
+                <columns>
+                    <p>Received with thanks from <span class="highlight">{{{{raw}}}}{{FIRST_NAME}} {{LAST_NAME}}{{{{/raw}}}}</span>,</p>
+                    <p>the sum of dollars <span class="highlight">{{{{raw}}}}{{AMOUNT_IN_WORDS}}{{{{/raw}}}} only</span>,</p>
+                    <p>towards <span class="highlight">{{{{raw}}}}{{PURPOSE}}{{{{/raw}}}}</span></p>
+                    <br>
+                    <p class="highlight">
+                        <strong>$ {{{{raw}}}}{{AMOUNT}}{{{{/raw}}}} /-</strong>
+                    </p>
+                </columns>
+            </row>
+            <row class="no-vpad">
+                <columns>
+                    <hr class="orange">
+                    <p class="footer text-center">
+                        <strong>
+                            Isha Foundation Australia Inc<br>
+                            ABN 97 969 681 302
+                        </strong>
+                    </p>
+                    <br>
+                </columns>
+            </row>
+    </columns>
+    </row>
+
+    {{> spacer }}
+
+</container>
