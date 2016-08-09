@@ -374,3 +374,8 @@ table.bg-black {
     color: $highlight;
   }
 }
+
+.alert-text {
+  color: $anchor-color;
+  font-weight: bold;
+}

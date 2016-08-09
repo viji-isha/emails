@@ -1519,3 +1519,7 @@ table.bg-black {
   color: #cc6600; }
   .orange-text table.body, .read-more-link table.body, .orange-text h1, .read-more-link h1, .orange-text h2, .read-more-link h2, .orange-text h3, .read-more-link h3, .orange-text h4, .read-more-link h4, .orange-text h5, .read-more-link h5, .orange-text h6, .read-more-link h6, .orange-text p, .read-more-link p, .orange-text td, .read-more-link td, .orange-text th, .read-more-link th, .orange-text a, .read-more-link a {
     color: #cc6600; }
+
+.alert-text {
+  color: #af360e;
+  font-weight: bold; }
