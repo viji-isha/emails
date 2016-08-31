@@ -1505,6 +1505,8 @@ table.bg-black {
   font-family: Merriweather, Georgia;
   font-style: italic;
   font-size: 20px; }
+  .quote p .gray-quote {
+    color: #7c7c7c; }
 
 .orange-background, .section-header {
   background: #cc6600;
