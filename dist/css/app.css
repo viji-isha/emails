@@ -1531,3 +1531,7 @@ table.bg-black {
 
 p {
   word-break: keep-all; }
+
+.callout-inner p {
+  margin: 0 !important;
+  text-align: center; }
