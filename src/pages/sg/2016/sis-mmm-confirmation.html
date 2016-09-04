@@ -1,0 +1,80 @@
+---
+img: https://storage.googleapis.com/mail-attachments
+subject: "SiS - MMM - Confirmation"
+preview: https://rawgit.com/ishacrm/emails/master/dist/sg/2016/sis-mmm-confirmation.html
+---
+<container>
+
+    {{> spacer }}
+
+    <row class="collapse no-vpad">
+        <columns large="2" small="4">
+            <wrapper class="logo">
+                <img src="{{img}}/common/isha-logo.png" alt="" />
+            </wrapper>
+        </columns>
+        <columns large="8" small="8">
+            <wrapper class="header">
+                <p class="heading text-right">Sadhguru in Singapore</p>
+                <p class="sub-heading text-right">Registration Confirmation</p>
+            </wrapper>
+        </columns>
+        <columns large="2" class="month">
+            Jan 2017
+        </columns>
+    </row>
+    {{> drop-shadow }}
+    <row>
+        <columns>
+            <spacer size="16"></spacer>
+        </columns>
+    </row>
+    <row>
+        <columns>
+            <p class="header highlight">
+                We are pleased to inform you that you have purchased the following tickets:
+            </p>
+            <br>
+            <h5>Sadhguru in Singapore - Meet, Mingle & Meditate</h5>
+            <h6>on Sunday, Jan 22nd 2017 - 4pm to 8:45pm</h6>
+            <hr>
+            <p>
+                Number of tickets: {{{{raw}}}}{{VAR1}}{{{{/raw}}}}<br>
+                Seating Category: {{{{raw}}}}{{VAR2}}{{{{/raw}}}}<br>
+                Buyer's Email: {{{{raw}}}}{{VAR3}}{{{{/raw}}}}<br>
+                Payment Amt: {{{{raw}}}}{{VAR4}}{{{{/raw}}}}<br>
+                Payment Reference: {{{{raw}}}}{{VAR5}}{{{{/raw}}}}
+            </p>
+            <hr>
+            <p>
+                You can view and manage the individual tickets by logging into the Ticket Portal.
+            </p>
+        </columns>
+    </row>
+    <row class="no-vpad">
+        <columns></columns>
+        <columns><center>
+            <button href="https://tickets.ishayoga.sg" class="radius alert">Log into Ticket Portal</button>
+        </center></columns>
+        <columns></columns>
+    </row>
+    <row>
+        <columns>
+            <p>
+                Please ensure that the information (Name, Email & Phone number) in the ticket is updated to the actual person attending the event.<br>
+                This information will be used during checkin on the program day.<br>
+                You can update this information anytime before Jan 7th.
+            </p>
+        </columns>
+    </row>
+
+    {{> drop-shadow }}
+
+    {{> spacer }}
+
+    {{> footer-sg }}
+
+    {{> spacer }}
+
+
+</container>
