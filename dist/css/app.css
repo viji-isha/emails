@@ -1426,8 +1426,11 @@ table.bg-black {
     color: #fe821f; }
 
 .header .sub-heading {
-  font-size: 14px;
-  margin-bottom: 0px; }
+  font-size: 16px;
+  margin-bottom: 0; }
+
+.header p {
+  margin-bottom: 5px; }
 
 .top-row {
   background: #e1dcd0; }
