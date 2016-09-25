@@ -12,7 +12,7 @@ import siphon   from 'siphon-media-query';
 const $ = plugins();
 const center = 'hk';
 const year = '2016';
-const wip = '201609-schedule';
+const wip = 'hatha-yoga-confirmation';
 const wip_path = center + '/' + year + '/' + wip + '.html';
 const base = 'src/pages/';
 const src = base + wip_path;
