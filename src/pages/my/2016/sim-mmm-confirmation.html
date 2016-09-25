@@ -1,0 +1,94 @@
+---
+img: https://storage.googleapis.com/mail-attachments
+subject: "SiM - MMM - Confirmation"
+preview: https://rawgit.com/ishacrm/emails/master/dist/my/2016/sim-mmm-confirmation.html
+---
+<container>
+
+    {{> spacer }}
+
+    <row class="collapse no-vpad">
+        <columns large="2" small="4">
+            <wrapper class="logo">
+                <img src="{{img}}/common/isha-logo.png" alt="" />
+            </wrapper>
+        </columns>
+        <columns large="8" small="8">
+            <wrapper class="header">
+                <p class="heading text-right">Sadhguru in Malaysia</p>
+                <p class="sub-heading text-right">Booking Confirmation</p>
+            </wrapper>
+        </columns>
+        <columns large="2" class="month">
+            Jan 2017
+        </columns>
+    </row>
+    {{> drop-shadow }}
+    <row>
+        <columns>
+            <spacer size="16"></spacer>
+        </columns>
+    </row>
+    <row>
+        <columns>
+            <p class="header highlight">
+                We are pleased to confirm the following bookings made by you:
+            </p>
+            <br>
+            <h5>Sadhguru in Malaysia - Meet, Mingle & Meditate</h5>
+            <span>on Saturday, Jan 21st 2017 - 4pm to 8:45pm</span>
+            <hr>
+            <p>
+                Number of tickets: {{{{raw}}}}{{VAR1}}{{{{/raw}}}}<br>
+                Seating Category: {{{{raw}}}}{{VAR2}}{{{{/raw}}}}<br>
+                Buyer's Email: {{{{raw}}}}{{VAR3}}{{{{/raw}}}}<br>
+                Payment Amt: {{{{raw}}}}{{VAR4}}{{{{/raw}}}}<br>
+                Payment Reference: {{{{raw}}}}{{VAR5}}{{{{/raw}}}}
+            </p>
+            <hr>
+            <p>
+                You can view and manage the bookings by logging into the Booking Portal.
+            </p>
+        </columns>
+    </row>
+    <row class="no-vpad">
+        <columns></columns>
+        <columns><center>
+            <button href="http://malaysia.ishayoga.org/booking/" class="radius alert">Booking Portal</button>
+        </center></columns>
+        <columns></columns>
+    </row>
+    <row>
+        <columns>
+            <p class="header highlight">
+                Please Note:
+            </p>
+            <ul>
+                <li>
+                    E-Tickets for all bookings will be issued after Dec 15th.
+                </li>
+                <li>
+                    Please update the booking information (Name, Email & Phone number) before this date.
+                </li>
+                <li>
+                    This information will be used during checkin on the program day.
+                </li>
+                <li>
+                    You can update this information anytime before Dec 15th.
+                </li>
+                <br>
+
+            </ul>
+        </columns>
+    </row>
+
+    {{> drop-shadow }}
+
+    {{> spacer }}
+
+    {{> footer-my }}
+
+    {{> spacer }}
+
+
+</container>
