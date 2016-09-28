@@ -55,14 +55,14 @@ preview: https://rawgit.com/ishacrm/emails/master/dist/hk/2016/hatha-yoga-confir
                 <strong>{{{{raw}}}}{{PROGRAM_NAME}}{{{{/raw}}}}</strong><br>
 
                 <strong>Date(s):</strong> {{{{raw}}}}{{DATES}}{{{{/raw}}}}<br>
-                <strong>Venue:</strong> {{{{raw}}}}{{VENUE}}{{{{/raw}}}} {{{{raw}}}}{{if MAP_LINK}}{{{{/raw}}}}
+                <strong>Venue:</strong> {{{{raw}}}}{{VENUE}}{{{{/raw}}}} {{{{raw}}}}{{#if MAP_LINK}}{{{{/raw}}}}
                 [<a href="{{{{raw}}}}{{MAP_LINK}}{{{{/raw}}}}">MAP</a>]
-                {{{{raw}}}}{{end}}{{{{/raw}}}}<br>
+                {{{{raw}}}}{{/if}}{{{{/raw}}}}<br>
                 <strong>Address:</strong> {{{{raw}}}}{{ADDRESS}}{{{{/raw}}}}<br>
                 <strong>Schedule:</strong><br>
-                {{{{raw}}}}{{each SESSIONS}}{{{{/raw}}}}
-                {{{{raw}}}}{{loop_var.day}}{{{{/raw}}}}: {{{{raw}}}}{{loop_var.start_time}}{{{{/raw}}}} to {{{{raw}}}}{{loop_var.end_time}}{{{{/raw}}}}<br>
-                {{{{raw}}}}{{end}}{{{{/raw}}}}
+                {{{{raw}}}}{{#each SESSIONS}}{{{{/raw}}}}
+                {{{{raw}}}}{{this.day}}{{{{/raw}}}}: {{{{raw}}}}{{this.start_time}}{{{{/raw}}}} to {{{{raw}}}}{{this.end_time}}{{{{/raw}}}}<br>
+                {{{{raw}}}}{{/each}}{{{{/raw}}}}
             </p>
             <hr>
             <p class="highlight bold">Payment Details</p>
