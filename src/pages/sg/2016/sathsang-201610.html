@@ -1,26 +1,23 @@
 ---
 img: https://storage.googleapis.com/mail-attachments
-subject: "Isha Sathsang 1 Oct '16 @ SCCCI Building, City Hall"
+subject: "Isha Sathsang 1 Oct '16 @ MDIS Queenstown"
 preview: https://rawgit.com/ishacrm/emails/master/dist/sg/2016/sathsang-201610.html
 ---
 <container>
 
     {{> spacer }}
 
-    <row class="collapse no-vpad">
+    <row class="email-header">
         <columns large="2" small="4">
-            <wrapper class="logo">
-                <img src="{{img}}/common/isha-logo.png" alt="" />
+            <wrapper>
+                <img src="http://www.ishafoundation.org/mumbai/newsletter/mar/img2/isha-foundation-logo-white.png" alt="" />
             </wrapper>
         </columns>
         <columns large="8" small="8">
-            <wrapper class="header text-right">
+            <wrapper class="header text-right" valign="middle">
                 <span class="heading">Isha Sathsang</span><br>
-                <span class="sub-heading">Singapore</span><br>
+                <span class="sub-heading">October, 2016</span>
             </wrapper>
-        </columns>
-        <columns large="2" class="month">
-            Oct 2016
         </columns>
     </row>
     {{> drop-shadow }}
@@ -54,20 +51,31 @@ preview: https://rawgit.com/ishacrm/emails/master/dist/sg/2016/sathsang-201610.h
     </row>
     {{> drop-shadow }}
 
+    <row class="section-title orange-background">
+        <columns>
+            Monthly Group Meditation (Sathsang)
+        </columns>
+    </row>
     {{> spacer-white }}
-    <row>
+    <row class="section-text">
         <columns>
             <p class="highlight">Dear {{{{raw}}}}{{FIRST_NAME}}{{{{/raw}}}},</p>
-            <p>
-                We welcome you to October <strong>Isha Monthly Sathsang</strong> - an opportunity to reconnect with your kriya with Sadhguru
-                guiding you through the Shambhavi Mahamudra Kriya.
+            <p>Isha Monthly Group Meditation is an opportunity to reconnect with your kriya with Sadhguru's voice guiding you through the Shambhavi Mahamudra Kriya. Here are the details of our upcoming Sathsang:</p>
+        </columns>
+    </row>
 
+    <row class="no-vpad program-details">
+        <columns>
+            <p>
+                <strong>Date & Time: </strong> 1 October, 6:00 PM to 8:30 PM <br/>
+                <strong>Venue:</strong> Samtas hall, 501 Stirling Rd, <br>
+                <span class="small">Singapore 148951</span> <a href="https://goo.gl/nTeqRq">(Map)</a>
             </p>
-            <callout class="secondary">
-                <strong>Date & Time:</strong> Saturday, 1 Oct'16 - 6pm to 8:30pm<br>
-                <strong>Venue:</strong> SCCCI Building, Auditorium, Level 2, <br>
-                <span class="small">47 Hill Street #09-00, S 179365 (5 mins walk from City Hall MRT Station Exit B)</span>
-            </callout>
+        </columns>
+    </row>
+
+    <row class="class-notes">
+        <columns>
             <p class="small">
                 Please ensure that
             </p>
@@ -86,8 +94,7 @@ preview: https://rawgit.com/ishacrm/emails/master/dist/sg/2016/sathsang-201610.h
     </row>
 
     {{> drop-shadow }}
-
-
+    
     <row class="section-header">
         <columns>
             Program Schedule
@@ -109,13 +116,34 @@ preview: https://rawgit.com/ishacrm/emails/master/dist/sg/2016/sathsang-201610.h
     <row>
         <columns>
             <p class="highlight">Isha Kriya</p>
-            <ul>
-                <li> Sun 2 October, 2016 @ Jurong Spring CC</li>
-                <li> Sun 2 October, 2016 @ Woodlands CC</li>
-                <li> Sun 9 October 2016 @ Yuhua CC</li>
-                <li> Sun 16 October, 2016 @ Woodlands CC</li>
-                <li> Sun 30 October, 2016 @ Woodlands CC</li>
-            </ul>
+            <table>
+                <tr>
+                    <th><strong>Date</strong></th>
+                    <th><strong>Venue</strong></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Sun 2 Oct'16</td>
+                    <td>Jurong Spring CC</td>
+                </tr>
+                <tr>
+                    <td>Sun 2 Oct'16</td>
+                    <td>Woodlands CC</td>
+                </tr>
+                <tr>
+                    <td>Sun 9 Oct'16</td>
+                    <td>Yuhua CC</td>
+                </tr>
+                <tr>
+                    <td>Sun 16 Oct'16</td>
+                    <td>Woodlands CC</td>
+                </tr>
+                <tr>
+                    <td>Sun 30 Oct'16</td>
+                    <td>Woodlands CC</td>
+                </tr>
+            </table>
+            <br/>
             <button href="https://ishayoga.sg/upcoming?type=ishakriya" class="outline orange small">Register Here</button>
             <hr>
         </columns>
@@ -123,11 +151,27 @@ preview: https://rawgit.com/ishacrm/emails/master/dist/sg/2016/sathsang-201610.h
     <row>
         <columns>
             <p class="highlight">Isha Upa Yoga</p>
-            <ul>
-                <li> Sun 9 October, 2016 @ Woodlands CC</li>
-                <li> Wed 12 October, 2016 @ Raffles City</li>
-            </ul>
+            <table>
+                <tr>
+                    <th><strong>Date</strong></th>
+                    <th><strong>Venue</strong></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Sun 9 Oct'16</td>
+                    <td>Woodlands CC</td>
+                </tr>
+                <tr>
+                    <td>Wed 12 Oct'16</td>
+                    <td>Raffles City</td>
+                </tr>
+            </table>
+            <br/>
             <button href="https://ishayoga.sg/upcoming?type=ishaupayoga" class="outline orange small">Register Here</button>
+            <hr>
+            <p>
+                if you have any queries on visiting the yoga center, please do not hesitate to contact <a href="mailto:visitindia-apac@ishafoundation.org" class="no-bold">visitindia-apac@ishafoundation.org</a>
+            </p>
         </columns>
     </row>
     {{> drop-shadow}}
