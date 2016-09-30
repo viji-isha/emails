@@ -395,3 +395,26 @@ p{word-break: keep-all;}
   margin: 0 !important;
   text-align: center;
 }
+
+p.h1 { font-size: $h1-font-size; }
+p.h2 { font-size: $h2-font-size; }
+p.h3 { font-size: $h3-font-size; }
+p.h4 { font-size: $h4-font-size; }
+p.h5 { font-size: $h5-font-size; }
+p.h6 { font-size: $h6-font-size; }
+
+p.justify {
+  text-align: justify;
+}
+
+.wider-gutter {
+  td.large-12.last, th.large-12.last {
+    padding-right: 32px;
+  }
+  td.large-12.first, th.large-12.first {
+    padding-left: 32px;
+  }
+  td.columns.last, td.column.last, th.columns.last, th.column.last {
+    padding-right: 32px;
+  }
+}
