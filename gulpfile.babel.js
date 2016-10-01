@@ -10,9 +10,9 @@ import fs       from 'fs';
 import siphon   from 'siphon-media-query';
 
 const $ = plugins();
-const center = 'my';
+const center = 'hk';
 const year = '2016';
-const wip = 'sim-mmm-confirmation';
+const wip = '201610-sathsang';
 const wip_path = center + '/' + year + '/' + wip + '.html';
 const base = 'src/pages/';
 const src = base + wip_path;
