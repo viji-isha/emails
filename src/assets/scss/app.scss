@@ -418,3 +418,11 @@ p.justify {
     padding-right: 32px;
   }
 }
+
+.wrapper.box {
+  .wrapper-inner {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+  border: solid 1px #f7dac8;
+}

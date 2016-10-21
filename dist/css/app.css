@@ -1565,3 +1565,9 @@ p.justify {
 
 .wider-gutter td.columns.last, .wider-gutter td.column.last, .wider-gutter th.columns.last, .wider-gutter th.column.last {
   padding-right: 32px; }
+
+.wrapper.box {
+  border: solid 1px #f7dac8; }
+  .wrapper.box .wrapper-inner {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important; }
