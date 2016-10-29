@@ -1,0 +1,125 @@
+---
+img: https://storage.googleapis.com/mail-attachments
+subject: "SiS - MMM - Confirmation"
+preview: https://rawgit.com/ishacrm/emails/master/dist/sg/2016/sis-mmm-confirmation-ch.html
+---
+<container>
+
+    {{> spacer }}
+
+    <row class="collapse no-vpad">
+        <columns large="2" small="4">
+            <wrapper class="logo">
+                <img src="{{img}}/common/isha-logo.png" alt="" />
+            </wrapper>
+        </columns>
+        <columns large="8" small="8">
+            <wrapper class="header">
+                <p class="heading text-right">萨古鲁在新加坡</p>
+                <p class="sub-heading text-right">预约确认</p>
+            </wrapper>
+        </columns>
+        <columns large="2" class="month">
+            Jan 2017
+        </columns>
+    </row>
+    {{> drop-shadow }}
+    <row>
+        <columns>
+            <spacer size="16"></spacer>
+        </columns>
+    </row>
+    <row>
+        <columns>
+            <p class="header highlight">
+                <strong>我们很高兴与您确认以下您的预订信息。</strong>
+            </p>
+            <br>
+            <h5><strong>萨古鲁在新加坡——遇见、融合与冥想</strong></h5>
+            <span>2017年1月22日（周日）16:00-20:45</span>
+            <hr>
+            <p>
+                门票数: {{{{raw}}}}{{VAR1}}{{{{/raw}}}}<br>
+                座位类别: 中文翻译<br>
+                购票者电子邮箱: {{{{raw}}}}{{VAR3}}{{{{/raw}}}}<br>
+                付款方式: {{{{raw}}}}{{VAR4}}{{{{/raw}}}}<br>
+                付款单号: {{{{raw}}}}{{VAR5}}{{{{/raw}}}}
+            </p>
+            <hr>
+            <p>
+                您可以登录预订页面查看和管理预订。
+            </p>
+        </columns>
+    </row>
+    <row class="no-vpad">
+        <columns></columns>
+        <columns><center>
+            <button href="https://booking.ishayoga.sg" class="radius alert">预订页面</button>
+        </center></columns>
+        <columns></columns>
+    </row>
+    <row>
+        <columns>
+            <p class="header highlight">
+                请注意:
+            </p>
+            <ul>
+                <li>
+                    所有订单的电子票将在12月15日后发行。
+                </li>
+                <li>
+                    请在此日期之前更新预订信息（姓名、电子邮件和电话号码）。
+                </li>
+                <li>
+                    此信息将在课程当日登记时使用。
+                </li>
+                <li>
+                    您可以在12月15日之前的任何时间更新此信息。
+                </li>
+                <br>
+
+            </ul>
+        </columns>
+    </row>
+
+    {{> drop-shadow }}
+
+    {{> spacer }}
+
+    <row class="shadow collapse no-vpad"><columns>
+        <p class="small text-center no-margin">
+            版权归 Isha新加坡所有(2016)
+        </p>
+    </columns></row>
+
+    <row class="shadow collapse no-vpad footer">
+        <columns>
+            <p class="small text-center no-margin">
+                <a href="http://ishayoga.sg" target="_blank"> ishayoga.sg </a> |
+                <a href="mailto:singapore@ishayoga.org" target="_blank"> 联系我们 </a> |
+                <a href="https://ishayoga.sg/privacy" target="_blank"> 隐私 </a>
+            </p>
+        </columns>
+    </row>
+    <row class="shadow collapse no-vpad footer">
+        <columns>
+            <center>
+                <menu>
+                    <item href="http://fb.com/ishapage">
+                        <img src="{{img}}/common/icons/facebook.png" alt="Isha Singapore on Facebook">
+                    </item>
+                    <item href="http://meetup.com/isha-singapore">
+                        <img src="{{img}}/common/icons/meetup.png" alt="Isha Singapore on Meetup">
+                    </item>
+                    <item href="http://youtube.com/user/ishafoundation">
+                        <img src="{{img}}/common/icons/youtube.png" alt="Isha Foundation on Youtube">
+                    </item>
+                </menu>
+            </center>
+        </columns>
+    </row>
+
+    {{> spacer }}
+
+
+</container>
