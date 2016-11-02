@@ -50,16 +50,16 @@ function pages() {
 }
 
 function pugs() {
-    return gulp.src(src, { base: base })
-        .pipe(pug({doctype: 'html'}))
-        .pipe(panini({
-            root: 'src/pages',
-            layouts: 'src/layouts',
-            partials: 'src/partials',
-            helpers: 'src/helpers'
-        }))
-        .pipe(inky())
-        .pipe(gulp.dest('dist'));
+  return gulp.src(src, { base: base })
+    .pipe(pug({doctype: 'html'}))
+    .pipe(panini({
+      root: 'src/pages',
+      layouts: 'src/layouts',
+      partials: 'src/partials',
+      helpers: 'src/helpers'
+    }))
+    .pipe(inky())
+    .pipe(gulp.dest('dist'));
 }
 
 // Reset Panini's cache of layouts and partials
@@ -88,7 +88,7 @@ function images() {
 
 // Inline CSS and minify HTML
 function inline() {
-  return gulp.src('dist/**/' + wip_path) //[dist], { base: base } // 'dist/**/*.html'
+  return gulp.src('dist/**/' + center + '/' + year + '/' + wip + ".html")
     .pipe(debug())
     .pipe($.if(PRODUCTION, inliner('dist/css/app.css')))
     .pipe(gulp.dest('dist'));
