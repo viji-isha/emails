@@ -8,12 +8,13 @@ import lazypipe from 'lazypipe';
 import inky     from 'inky';
 import fs       from 'fs';
 import siphon   from 'siphon-media-query';
+import pug      from 'gulp-pug';
 
 const $ = plugins();
-const center = 'hk';
+const center = 'sg';
 const year = '2016';
-const wip = '201611-Sathsang';
-const wip_path = center + '/' + year + '/' + wip + '.html';
+const wip = 'sis-mmm-vol-followup';
+const wip_path = center + '/' + year + '/' + wip + '.pug';
 const base = 'src/pages/';
 const src = base + wip_path;
 const dist = 'dist/' + wip_path;
@@ -21,9 +22,14 @@ const dist = 'dist/' + wip_path;
 // Look for the --production flag
 const PRODUCTION = !!(yargs.argv.production);
 
-// Build the "dist" folder by running all of the above tasks
-gulp.task('build',
-  gulp.series(pages, sass, images, inline));
+if (wip_path.indexOf('.pug') >= 0) {
+    gulp.task('build',
+        gulp.series(pugs, sass, images, inline));
+} else {
+    // Build the "dist" folder by running all of the above tasks
+    gulp.task('build',
+        gulp.series(pages, sass, images, inline));
+}
 
 // Build emails, run the server, and watch for file changes
 gulp.task('default',
@@ -41,6 +47,19 @@ function pages() {
     }))
     .pipe(inky())
     .pipe(gulp.dest('dist'));
+}
+
+function pugs() {
+    return gulp.src(src, { base: base })
+        .pipe(pug({doctype: 'html'}))
+        .pipe(panini({
+            root: 'src/pages',
+            layouts: 'src/layouts',
+            partials: 'src/partials',
+            helpers: 'src/helpers'
+        }))
+        .pipe(inky())
+        .pipe(gulp.dest('dist'));
 }
 
 // Reset Panini's cache of layouts and partials
@@ -88,8 +107,9 @@ function server(done) {
 
 // Watch for file changes
 function watch() {
+  gulp.watch('src/pages/**/*.pug').on('change', gulp.series(pugs, inline, browser.reload));
   gulp.watch('src/pages/**/*.html').on('change', gulp.series(pages, inline, browser.reload));
-  gulp.watch(['src/layouts/**/*', 'src/partials/**/*']).on('change', gulp.series(resetPages, pages, inline, browser.reload));
+  gulp.watch(['src/layouts/**/*']).on('change', gulp.series(resetPages, pages, inline, browser.reload));
   gulp.watch(['../scss/**/*.scss', 'src/assets/scss/**/*.scss']).on('change', gulp.series(resetPages, sass, pages, inline, browser.reload));
   gulp.watch('src/assets/img/**/*').on('change', gulp.series(images, browser.reload));
 }
