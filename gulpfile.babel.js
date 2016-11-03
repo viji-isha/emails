@@ -10,7 +10,7 @@ import fs       from 'fs';
 import siphon   from 'siphon-media-query';
 
 const $ = plugins();
-const center = 'sg';
+const center = 'au';
 const year = '2016';
 const wip = 'sathsang-201611';
 const wip_path = center + '/' + year + '/' + wip + '.html';
