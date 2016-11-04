@@ -22,7 +22,7 @@ container
 
     +spacer-white
     row: columns
-        p.highlight Namaskaram !{_('FIRST_NAME')}
+        p.highlight Namaskaram !{_('FIRST_NAME')},
         p.justify.
             Thank you for registering to volunteer for Sadhguru's programme.
         p.justify.
@@ -31,9 +31,9 @@ container
 
     row: columns
         callout.secondary.
-            The main team that you are assigned to is: !{_('VAR1')}#[br]
-            !{_('if VAR2 != "NA"')} Other team(s) that you can contribute are: !{_('VAR2')} !{_('end')}#[br]
-            Your main team's coordinator(s): !{_('VAR3')}
+            The main team that you are assigned to is: #[strong !{_('VAR1')}]#[br]
+            !{_('if VAR2 != "NA"')} Other team(s) that you can contribute are: #[strong !{_('VAR2')}] !{_('end')}#[br]
+            Your main team's coordinator(s): !{_('VAR3')}#[br]
             To know other team coordinators, please see below.
 
     row: columns
