@@ -1,0 +1,58 @@
+- var img = "https://storage.googleapis.com/mail-attachments"
+- var subject = "Sadhguru in Singapore - Payment Confirmation"
+- var preview = "https://rawgit.com/ishacrm/emails/master/dist/sg/2016/sis-mmm-assisted-receipt.html"
+- function _(name) { return '{{{{raw}}}}{{' + name + '}}}{{{{/raw}}}}'; }
+
+mixin spacer
+    include ../../../partials/spacer.html
+
+mixin spacer-white
+    include ../../../partials/spacer-white.html
+
+mixin drop-shadow
+    include ../../../partials/drop-shadow.html
+
+mixin footer-sg
+    include ../../../partials/footer-sg.pug
+
+container
+    +spacer
+    row.collapse.no-vpad
+        columns(large="2",small="4")
+            wrapper.logo
+                img(src=img+"/common/isha-logo.png",alt="")
+        columns(large="10",small="8")
+            wrapper.header
+                p.heading.text-right Sadhguru in Singapore
+                p.sub-heading.text-right Booking Confirmation
+    hr
+    row: columns
+        p.header.highlight
+            | We are pleased to confirm the following booking made by you:
+            br
+            h5 Sadhguru in Singapore - Meet, Mingle & Meditate
+            span on Sunday, Jan 22nd 2017 - 4pm to 8:45pm
+            hr
+            p
+                | Seating Category: !{_('VAR1')}
+                br
+                | Payment Amt: !{_('VAR2')}
+                br
+                | Payment Reference: !{_('VAR3')}
+            hr
+            p
+                | Your booking was assisted by: !{_('VAR4')} (!{_('VAR5')})
+
+    row: columns.small
+            p.header.highlight Please Note:
+            ul
+                li E-Ticket for your booking will be issued after Dec 15th.
+                li You need to bring a printout of the e-ticket and your photo id (NRIC/Passport) to gain entry into the event.
+                li You can update this information anytime before Dec 15th.
+                </li>
+            br
+
+    +drop-shadow
+    +spacer
+    +footer-sg
+    +spacer
