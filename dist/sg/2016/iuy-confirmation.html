@@ -310,7 +310,7 @@
                                                        align="left">Thank you for registering for the {{PROGRAM_NAME}}
                                                         program.<br> You may use this email as a confirmation for your
                                                         registration.<br> Kindly take note of the program details and do
-                                                        <a href="mailto:singapore@ishayoga.org?subject=Reg%20%7B%7BPROGRAM_NAME%7D%7D%20registration%20(Id%20%7B%7BREGISTRATION_ID%7D%7D)"
+                                                        <a href="mailto:singapore@ishayoga.org?subject=Reg {{PROGRAM_NAME}} registration (Id {{REGISTRATION_ID}})"
                                                            style="color: #581700; text-decoration: none; font-weight: bold;">contact
                                                             us</a> for any clarifications. </p>
                                                     <p style="color: #3c3c3c; font-family: 'Georgia', serif; font-weight: normal; font-size: 15px; line-height: 1.4em; text-align: left; margin: 0 0 10px; padding: 0;"
@@ -502,7 +502,7 @@
                                                                                  align="left">Program Details</p>
                                                     <p style="color: #3c3c3c; font-family: 'Georgia', serif; font-weight: normal; font-size: 15px; line-height: 1.4em; text-align: left; margin: 0 0 10px; padding: 0;"
                                                        align="left"><strong>Venue:</strong> {{VENUE}} {{#if MAP_LINK}}
-                                                        <a href="%7B%7BMAP_LINK%7D%7D"
+                                                        <a href="{{MAP_LINK}}"
                                                            style="color: #581700; text-decoration: none; font-weight: bold;">[MAP]</a>
                                                         {{/if}} <br><strong>Address:</strong> {{ADDRESS}}<br><strong>Date
                                                             &amp; Time:</strong> {{#each SESSIONS}} {{this.DAY}} :
