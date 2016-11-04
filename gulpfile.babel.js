@@ -11,7 +11,7 @@ import siphon   from 'siphon-media-query';
 import pug      from 'gulp-pug';
 
 const $ = plugins();
-const center = 'sg';
+const center = 'au';
 const year = '2016';
 const wip = 'sis-mmm-vol-followup';
 const wip_path = center + '/' + year + '/' + wip + '.pug';
